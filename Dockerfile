@@ -1,7 +1,6 @@
 FROM  java:7-jdk-alpine
 WORKDIR /home/root/javahelloworld
 COPY src ./src
-COPY bin ./bin
 ENV FOO bar
 RUN javac -d bin src/HelloWorld.java
 RUN touch "hola"
